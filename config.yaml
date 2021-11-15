@@ -48,7 +48,7 @@ monitors:
     expectStatus: 200
     linkable: true
     
-   - id: api-iron-security
+  - id: api-iron-security
     name: api.iron.security
     description: 'IRON platform API'
     url: 'https://api.iron.security/'
