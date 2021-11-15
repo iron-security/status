@@ -6,7 +6,7 @@ compatibility_date = "2021-07-23"
 
 [env.prd]
 zone_id = '7e568a94bf4fe58607aec4b1677f80b1'
-routes = ["status.iron.security"]
+routes = ["status.iron.security/*"]
 
 [triggers]
 crons = ["*/2 * * * *"]
