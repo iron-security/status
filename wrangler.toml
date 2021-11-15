@@ -4,17 +4,13 @@ account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
+
+zone_id = '7e568a94bf4fe58607aec4b1677f80b1'
 routes = ["status.iron.security"]
 
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/2 * * * *"]
 
 [site]
 bucket = "out"
 entry-point = "./"
-
-# uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-#zone_id="xxx"
-#route="xxx"
