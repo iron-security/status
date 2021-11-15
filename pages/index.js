@@ -45,6 +45,8 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
     <div className="min-h-screen">
       <Head>
         <title>{config.settings.title}</title>
+        <link rel="apple-touch-icon" type="image/png" href={config.settings.logo}>
+        <link rel="shortcut icon" type="image/png" href={config.settings.logo}>
         <link rel="stylesheet" href="./style.css" />
         <script>
           {`
