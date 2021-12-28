@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'IRON Status Page'
   url: 'https://status.iron.security' # used for Slack messages
   logo: https://iron.security/img/favicon.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -11,7 +11,7 @@ settings:
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramOperational: 'Functional'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
@@ -42,7 +42,7 @@ monitors:
     
   - id: app-iron-security
     name: app.iron.security
-    description: 'IRON platform'
+    description: 'IRON platform web interface'
     url: 'https://app.iron.security/'
     method: GET
     expectStatus: 200
