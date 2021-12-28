@@ -1,0 +1,29 @@
+name: build
+
+on:
+  pull_request:
+
+jobs:
+
+  worker:
+    runs-on: ubuntu-latest
+    steps:
+    -
+      uses: actions/checkout@v2
+    -
+      name: npm install
+      run: npm install
+    -
+      name: yarn install
+      run: yarn install
+    -
+      name: yarn run css
+      run: yarn run css
+    -
+      name: wrangler
+      uses: cloudflare/wrangler-action@1.3.0
+      with:
+        apiToken: ${{ secrets.CF_API_TOKEN }}
+        environment: prd
+        publish: false
+        preCommands: wrangler build
