@@ -23,6 +23,15 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+ 
+  - id: crowdstrike-eu1
+    name: eu-1.crowdstrike.com
+    description: 'The EU instance of the Crowdstrike platform.'
+    url: 'https://falcon.eu-1.crowdstrike.com/'
+    method: GET
+    expectSTatus: 200
+    followRedirect: true
+    linkable: false
 
   - id: iron-security
     name: iron.security
