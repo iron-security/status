@@ -53,5 +53,5 @@ monitors:
     description: 'IRON platform API'
     url: 'https://api.iron.security/'
     method: GET
-    expectStatus: 404
+    expectStatus: 401
     linkable: true
