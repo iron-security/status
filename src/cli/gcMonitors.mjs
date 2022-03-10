@@ -1,4 +1,4 @@
-const yaml = import('yaml-loader')
+import yaml from 'yaml-loader';
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 import fs from 'fs';
 
