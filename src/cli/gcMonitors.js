@@ -1,6 +1,6 @@
 const yaml = import('yaml-loader')
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const fs = import('fs')
+import fs from 'fs';
 
 const accountId = process.env.CF_ACCOUNT_ID
 const namespaceId = process.env.KV_NAMESPACE_ID
