@@ -21,8 +21,26 @@ monitors:
     url: 'https://workers.cloudflare.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+ 
+  - id: crowdstrike-eu1
+    name: eu-1.crowdstrike.com
+    description: 'The EU instance of the Crowdstrike platform.'
+    url: 'https://falcon.eu-1.crowdstrike.com/'
+    method: GET
+    expectSTatus: 200
+    followRedirect: true
+    linkable: false
+    
+  - id: iron-slack
+    name: ironsecurity.slack.com
+    description: 'Our Slack instance.'
+    url: 'https://ironsecurity.slack.com/'
+    method: GET
+    expectSTatus: 200
+    followRedirect: true
+    linkable: false
 
   - id: iron-security
     name: iron.security
@@ -53,5 +71,5 @@ monitors:
     description: 'IRON platform API'
     url: 'https://api.iron.security/'
     method: GET
-    expectStatus: 404
+    expectStatus: 401
     linkable: true

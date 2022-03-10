@@ -9,7 +9,7 @@
     "dev": "flareact dev",
     "build": "yarn css && flareact build",
     "deploy": "yarn build && flareact publish",
-    "kv-gc": "node ./src/cli/gcMonitors.cjs",
+    "kv-gc": "node ./src/cli/gcMonitors.mjs",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "css": "postcss public/tailwind.css -o public/style.css"
   },
@@ -21,11 +21,11 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
     "node-fetch": "^3.2.2",
+    "autoprefixer": "^10.4.2",
     "postcss": "^8.2.10",
     "postcss-cli": "^9.1.0",
-    "tailwindcss": "^3.0.7",
+    "tailwindcss": "^3.0.23",
     "prettier": "^2.5.1",
     "yaml-loader": "^0.6.0"
   }
