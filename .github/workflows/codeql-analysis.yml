@@ -41,7 +41,7 @@ jobs:
       env:
         NODE_ENV: production
     
-    - run: flareact build
+    - run: npx flareact build
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
