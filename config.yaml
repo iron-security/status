@@ -32,6 +32,15 @@ monitors:
     expectSTatus: 200
     followRedirect: true
     linkable: false
+    
+  - id: iron-slack
+    name: ironsecurity.slack.com
+    description: 'Our Slack instance.'
+    url: 'https://ironsecurity.slack.com/'
+    method: GET
+    expectSTatus: 200
+    followRedirect: true
+    linkable: false
 
   - id: iron-security
     name: iron.security
