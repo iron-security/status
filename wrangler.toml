@@ -9,7 +9,7 @@ zone_id = '7e568a94bf4fe58607aec4b1677f80b1'
 routes = ["status.iron.security/*"]
 
 [triggers]
-crons = ["*/2 * * * *"]
+crons = ["*/15 * * * *"]
 
 [site]
 bucket = "out"
