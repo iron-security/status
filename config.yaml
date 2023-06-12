@@ -15,23 +15,6 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'Our platform infrastructure provider.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
- 
-  - id: crowdstrike-eu1
-    name: eu-1.crowdstrike.com
-    description: 'The EU instance of the Crowdstrike platform.'
-    url: 'https://falcon.eu-1.crowdstrike.com/'
-    method: GET
-    expectSTatus: 200
-    followRedirect: true
-    linkable: false
     
   - id: iron-slack
     name: ironsecurity.slack.com
